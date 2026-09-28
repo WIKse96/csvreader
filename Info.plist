@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key><string>CSV Reader</string>
+    <key>CFBundleDisplayName</key><string>CSV Reader</string>
+    <key>CFBundleIdentifier</key><string>app.local.csvreader</string>
+    <key>CFBundleExecutable</key><string>CSVReader</string>
+    <key>CFBundleIconFile</key><string>AppIcon</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>CFBundleDevelopmentRegion</key><string>pl</string>
+    <key>LSMinimumSystemVersion</key><string>13.0</string>
+    <key>LSApplicationCategoryType</key><string>public.app-category.productivity</string>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSSupportsAutomaticTermination</key><false/>
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key><string>Plik CSV</string>
+            <key>CFBundleTypeRole</key><string>Editor</string>
+            <key>LSHandlerRank</key><string>Alternate</string>
+            <key>LSItemContentTypes</key><array><string>public.comma-separated-values-text</string></array>
+            <key>NSDocumentClass</key><string>CSVDocument</string>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key><string>Plik TSV</string>
+            <key>CFBundleTypeRole</key><string>Editor</string>
+            <key>LSHandlerRank</key><string>Alternate</string>
+            <key>LSItemContentTypes</key><array><string>public.tab-separated-values-text</string></array>
+            <key>NSDocumentClass</key><string>CSVDocument</string>
+        </dict>
+        <dict>
+            <key>CFBundleTypeName</key><string>Plik tekstowy</string>
+            <key>CFBundleTypeRole</key><string>Editor</string>
+            <key>LSHandlerRank</key><string>Alternate</string>
+            <key>LSItemContentTypes</key><array><string>public.plain-text</string></array>
+            <key>NSDocumentClass</key><string>CSVDocument</string>
+        </dict>
+    </array>
+</dict>
+</plist>

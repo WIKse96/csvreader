@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=CSV Reader
+GenericName=Edytor plików CSV
+Comment=Lekki edytor plików CSV z filtrowaniem kolumn
+Exec=csvreader %F
+Icon=csvreader
+Terminal=false
+Categories=Office;Spreadsheet;Utility;
+MimeType=text/csv;text/tab-separated-values;text/x-csv;application/csv;text/plain;
+Keywords=csv;tsv;tabela;arkusz;spreadsheet;
+StartupWMClass=csvreader
