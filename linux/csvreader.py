@@ -1043,6 +1043,13 @@ class Grid(tk.Frame):
         entry.bind("<Up>", lambda e: self._editor_arrow(-1, e))
         entry.bind("<Down>", lambda e: self._editor_arrow(1, e))
         entry.bind("<KeyRelease>", lambda e: self._place_editor())
+        entry.bind("<Control-a>", self._editor_select_all)
+        entry.bind("<Control-A>", self._editor_select_all)
+
+    def _editor_select_all(self, e):
+        e.widget.selection_range(0, "end")
+        e.widget.icursor("end")
+        return "break"
 
     def _editor_key(self, dr, dc, e):
         if dr and e.state & SHIFT:
