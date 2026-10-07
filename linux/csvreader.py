@@ -1582,10 +1582,7 @@ class Window(tk.Toplevel):
         FilterPopup(self, c, x, y)
 
     def grid_context_menu(self, e):
-        try:
-            self.context.tk_popup(e.x_root, e.y_root)
-        finally:
-            self.context.grab_release()
+        self.context.tk_popup(e.x_root, e.y_root)
 
     def grid_autosize(self, c):
         fnt = self.grid.font
