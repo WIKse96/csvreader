@@ -27,7 +27,7 @@ cd csvreader
 ./build.sh
 ```
 
-Gotowa aplikacja trafi do `build/CSV Reader.app` (ok. 450 KB).
+Gotowa aplikacja trafi do `build.noindex/CSV Reader.app` (ok. 450 KB).
 
 ### Instalacja
 
@@ -36,7 +36,7 @@ Gotowa aplikacja trafi do `build/CSV Reader.app` (ok. 450 KB).
 ```
 
 Polecenie kopiuje aplikację do `/Applications`, więc pojawi się w Launchpadzie i w menu „Otwórz za pomocą”.
-Możesz też po prostu przeciągnąć `build/CSV Reader.app` do folderu Aplikacje.
+Możesz też po prostu przeciągnąć `build.noindex/CSV Reader.app` do folderu Aplikacje.
 
 Aplikacja jest podpisana lokalnie (ad-hoc), a nie certyfikatem Apple. Jeśli skopiujesz ją na **inny** Mac,
 za pierwszym razem otwórz ją przez prawy przycisk → **Otwórz** (albo zezwól na nią w Ustawieniach → Prywatność i ochrona).

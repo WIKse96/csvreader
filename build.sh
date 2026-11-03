@@ -1,5 +1,5 @@
 #!/bin/bash
-# Buduje "CSV Reader.app". Użycie:  ./build.sh           -> build/CSV Reader.app
+# Buduje "CSV Reader.app". Użycie:  ./build.sh           -> build.noindex/CSV Reader.app
 #                                   ./build.sh install   -> dodatkowo kopiuje do /Applications
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -7,7 +7,7 @@ cd "$(dirname "$0")"
 swift build -c release
 BIN="$(swift build -c release --show-bin-path)/CSVReader"
 
-APP="build/CSV Reader.app"
+APP="build.noindex/CSV Reader.app"
 rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp "$BIN" "$APP/Contents/MacOS/CSVReader"
